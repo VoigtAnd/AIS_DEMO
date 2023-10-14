@@ -1,4 +1,3 @@
-import org.gradle.internal.impldep.bsh.commands.dir
 
 rootProject.name = "AIS_DEMO"
 
@@ -14,6 +13,8 @@ pluginManagement {
 
 
 include(":platform_module")
+include(":tenant")
+include(":backoffice")
 
 val aisModules = file("ais_modules").listFiles()
 for(m in aisModules) {
